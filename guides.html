@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N47L5HQM');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete fitness guides for beginners and advanced athletes. Learn how to lose weight, build muscle, improve flexibility, and achieve your fitness goals with expert step-by-step guides.">
+    <meta name="keywords" content="fitness guides, how to lose weight, muscle building guide, beginner fitness, workout guide, exercise tutorial, fitness tips, training program">
+    <meta name="author" content="FitHome Pro">
+    <meta property="og:title" content="Complete Fitness Guides - Weight Loss, Muscle Building & More | FitHome Pro">
+    <meta property="og:description" content="Expert fitness guides covering everything from weight loss to muscle building. Free step-by-step tutorials for all fitness levels.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Complete Fitness Guides - Weight Loss, Muscle Building & Training 2025 | FitHome Pro</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FF6B35;
+            --secondary: #004E89;
+            --dark: #1A1A2E;
+            --light: #F7F7F7;
+            --accent: #00D9FF;
+            --purple: #9B59B6;
+            --pink: #E91E63;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(155,89,182,0.95), rgba(233,30,99,0.95)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%239B59B6" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 2rem auto 0;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1.2rem 3.5rem 1.2rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-btn:hover {
+            background: var(--secondary);
+        }
+
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: white;
+            color: var(--dark);
+            padding: 0.8rem 2rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .guide-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .guide-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            z-index: 10;
+        }
+
+        .guide-image {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            position: relative;
+        }
+
+        .guide-content {
+            padding: 2rem;
+        }
+
+        .guide-category {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .guide-title {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .guide-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .guide-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        .guide-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .guide-button {
+            display: block;
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .guide-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,107,53,0.4);
+        }
+
+        .featured-guide {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .featured-image {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10rem;
+            min-height: 500px;
+            position: relative;
+        }
+
+        .featured-content {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .featured-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--pink));
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            width: fit-content;
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .quick-link-card {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .quick-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .quick-link-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .quick-link-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--purple);
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .faq-section {
+            margin: 4rem 0;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: box-shadow 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
+
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.8;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 3rem 1.5rem;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            .guides-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-guide {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-image {
+                min-height: 300px;
+            }
+
+            .featured-content {
+                padding: 2rem;
+            }
+
+            .filter-tabs {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Complete Fitness Guides",
+        "description": "Expert fitness guides covering weight loss, muscle building, flexibility, and more",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FitHome Pro"
+        }
+    }
+    </script>
+</head>
+<body>
+     <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N47L5HQM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+     
+    <header>
+        <nav>
+            <a href="index.html" class="logo">💪 FitHome Pro</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="guides.html" class="active">Guides</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Fitness Guides</span>
+    </div>
+
+    <section class="hero">
+        <h1>📚 Complete Fitness Guides</h1>
+        <p>Step-by-step guides to help you lose weight, build muscle, improve flexibility, and achieve your fitness goals. Expert advice for every fitness level.</p>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search guides... (e.g., weight loss, muscle building)">
+            <button class="search-btn">Search</button>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="quick-links">
+            <a href="#weight-loss" class="quick-link-card">
+                <div class="quick-link-icon">⚖️</div>
+                <div class="quick-link-title">Weight Loss</div>
+            </a>
+            <a href="#muscle-building" class="quick-link-card">
+                <div class="quick-link-icon">💪</div>
+                <div class="quick-link-title">Muscle Building</div>
+            </a>
+            <a href="#beginners" class="quick-link-card">
+                <div class="quick-link-icon">🌟</div>
+                <div class="quick-link-title">For Beginners</div>
+            </a>
+            <a href="#flexibility" class="quick-link-card">
+                <div class="quick-link-icon">🧘</div>
+                <div class="quick-link-title">Flexibility</div>
+            </a>
+            <a href="#cardio" class="quick-link-card">
+                <div class="quick-link-icon">🏃</div>
+                <div class="quick-link-title">Cardio Training</div>
+            </a>
+            <a href="#nutrition" class="quick-link-card">
+                <div class="quick-link-icon">🥗</div>
+                <div class="quick-link-title">Nutrition Tips</div>
+            </a>
+        </section>
+
+        <article class="featured-guide">
+            <div class="featured-image">🎯</div>
+            <div class="featured-content">
+                <span class="featured-tag">⭐ MOST POPULAR GUIDE</span>
+                <h2 class="guide-title" style="font-size: 2.5rem;">Complete Beginner's Guide to Fitness</h2>
+                <p class="guide-description" style="font-size: 1.2rem; margin-bottom: 2rem;">Everything you need to start your fitness journey. This comprehensive guide covers workout basics, nutrition fundamentals, goal setting, and creating sustainable habits. Perfect for anyone starting from zero.</p>
+                <div class="guide-meta" style="margin-bottom: 2rem;">
+                    <div class="guide-meta-item">📖 <strong>45 min read</strong></div>
+                    <div class="guide-meta-item">👥 <strong>500K+ readers</strong></div>
+                    <div class="guide-meta-item">⭐ <strong>4.9/5 rating</strong></div>
+                </div>
+                <a href="#" class="guide-button" style="display: inline-block; width: auto;">Read Complete Guide →</a>
+            </div>
+        </article>
+
+        <h2 class="section-title">Browse by Category</h2>
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Guides</button>
+            <button class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+            <button class="filter-btn" data-filter="muscle">Muscle Building</button>
+            <button class="filter-btn" data-filter="beginner">Beginners</button>
+            <button class="filter-btn" data-filter="advanced">Advanced</button>
+            <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+        </div>
+
+        <div class="guides-grid">
+            <article class="guide-card" data-category="weight-loss">
+                <span class="guide-badge">TRENDING</span>
+                <div class="guide-image">🔥</div>
+                <div class="guide-content">
+                    <span class="guide-category">WEIGHT LOSS</span>
+                    <h3 class="guide-title">How to Lose 20 Pounds in 90 Days</h3>
+                    <p class="guide-description">Science-backed weight loss strategy combining proper nutrition, effective workouts, and lifestyle changes. Sustainable approach that keeps the weight off permanently.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 35 min read</div>
+                        <div class="guide-meta-item">📊 Beginner</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="muscle">
+                <span class="guide-badge">NEW</span>
+                <div class="guide-image">💪</div>
+                <div class="guide-content">
+                    <span class="guide-category">MUSCLE BUILDING</span>
+                    <h3 class="guide-title">Complete Guide to Building Muscle at Home</h3>
+                    <p class="guide-description">Build serious muscle without expensive equipment. Progressive bodyweight training, nutrition protocols, and recovery strategies for maximum gains.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 40 min read</div>
+                        <div class="guide-meta-item">📊 Intermediate</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="beginner">
+                <div class="guide-image">🌟</div>
+                <div class="guide-content">
+                    <span class="guide-category">BEGINNERS</span>
+                    <h3 class="guide-title">First Month of Fitness: What to Expect</h3>
+                    <p class="guide-description">Navigate your first 30 days of working out. Avoid common mistakes, set realistic expectations, and build habits that last a lifetime.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 20 min read</div>
+                        <div class="guide-meta-item">📊 Beginner</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="nutrition">
+                <div class="guide-image">🥗</div>
+                <div class="guide-content">
+                    <span class="guide-category">NUTRITION</span>
+                    <h3 class="guide-title">Macros Explained: Your Complete Guide</h3>
+                    <p class="guide-description">Master macronutrients for your goals. Learn how to calculate and track protein, carbs, and fats for optimal body composition and performance.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 30 min read</div>
+                        <div class="guide-meta-item">📊 All Levels</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="muscle">
+                <div class="guide-image">🏋️</div>
+                <div class="guide-content">
+                    <span class="guide-category">STRENGTH</span>
+                    <h3 class="guide-title">Progressive Overload: The Key to Muscle Growth</h3>
+                    <p class="guide-description">Understanding the #1 principle of muscle building. Learn how to progressively challenge your muscles for continuous growth and strength gains.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 25 min read</div>
+                        <div class="guide-meta-item">📊 Intermediate</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="advanced">
+                <span class="guide-badge">EXPERT</span>
+                <div class="guide-image">⚡</div>
+                <div class="guide-content">
+                    <span class="guide-category">ADVANCED</span>
+                    <h3 class="guide-title">Breaking Through Fitness Plateaus</h3>
+                    <p class="guide-description">Advanced strategies to overcome stagnation. Training variables manipulation, deload protocols, and periodization techniques for experienced athletes.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 50 min read</div>
+                        <div class="guide-meta-item">📊 Advanced</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="weight-loss">
+                <div class="guide-image">📉</div>
+                <div class="guide-content">
+                    <span class="guide-category">FAT LOSS</span>
+                    <h3 class="guide-title">Intermittent Fasting: Complete Beginner's Guide</h3>
+                    <p class="guide-description">Everything about intermittent fasting for weight loss. Different protocols, benefits, common mistakes, and how to start safely and effectively.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 35 min read</div>
+                        <div class="guide-meta-item">📊 Beginner</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="beginner">
+                <div class="guide-image">🎯</div>
+                <div class="guide-content">
+                    <span class="guide-category">MOTIVATION</span>
+                    <h3 class="guide-title">Setting Realistic Fitness Goals That Work</h3>
+                    <p class="guide-description">Goal-setting framework for fitness success. SMART goals, tracking progress, staying motivated, and achieving sustainable results you can maintain.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 20 min read</div>
+                        <div class="guide-meta-item">📊 All Levels</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+
+            <article class="guide-card" data-category="nutrition">
+                <div class="guide-image">🍳</div>
+                <div class="guide-content">
+                    <span class="guide-category">MEAL PREP</span>
+                    <h3 class="guide-title">Meal Prep 101: Save Time & Stay Healthy</h3>
+                    <p class="guide-description">Master meal prepping for the busy lifestyle. Weekly planning strategies, batch cooking techniques, storage tips, and easy healthy recipes.</p>
+                    <div class="guide-meta">
+                        <div class="guide-meta-item">⏱️ 30 min read</div>
+                        <div class="guide-meta-item">📊 Beginner</div>
+                    </div>
+                    <a href="#" class="guide-button">Start Reading</a>
+                </div>
+            </article>
+        </div>
+
+        <section class="cta-section">
+            <h2>Can't Find What You're Looking For?</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 1rem;">Request a custom guide or get personalized coaching</p>
+            <a href="#" class="cta-button">Contact Our Experts</a>
+        </section>
+
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    How long does it take to see results?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Most people start noticing changes within 4-6 weeks of consistent training and proper nutrition. Visible muscle definition typically appears after 8-12 weeks, while significant body transformation usually takes 3-6 months. Remember, results vary based on your starting point, consistency, genetics, and goals.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do I need gym equipment to get fit?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    No! Bodyweight exercises are extremely effective for building strength, muscle, and losing fat. Our guides focus on home workouts that require minimal or no equipment. You can achieve amazing results with just your body weight, progressive overload, and consistency.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What's the best diet for weight loss?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    The best diet is one you can stick to long-term. Weight loss comes down to a calorie deficit, but sustainability is key. Whether it's intermittent fasting, keto, Mediterranean, or balanced macros - choose what fits your lifestyle. Our nutrition guides help you find the right approach for your goals and preferences.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How often should I work out per week?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    For beginners, 3-4 days per week is ideal to allow proper recovery. Intermediate exercisers can train 4-5 days weekly. Advanced athletes often train 5-6 days with strategic rest days. Quality matters more than quantity - focus on progressive overload and proper form rather than just frequency.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Should I do cardio or strength training first?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    It depends on your primary goal. For muscle building, do strength training first when energy levels are highest. For endurance athletes, prioritize cardio. For general fitness, alternate or do them on separate days. Our guides provide detailed recommendations based on your specific fitness objectives.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How much protein do I really need?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    For muscle building and recovery, aim for 1.6-2.2 grams of protein per kilogram of body weight daily. For a 70kg person, that's 112-154g of protein. Active individuals need more than sedentary people. Check our nutrition guides for detailed protein recommendations and meal planning strategies.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+        <p>&copy; 2025 FitHome Pro. All rights reserved. Your journey to better health starts here.</p>
+    </footer>
+
+    <script>
+        // Menu toggle for mobile
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '60px';
+                navLinks.style.right = '20px';
+                navLinks.style.background = 'var(--secondary)';
+                navLinks.style.padding = '1rem';
+                navLinks.style.borderRadius = '10px';
+            }
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const guideCards = document.querySelectorAll('.guide-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                guideCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const category = card.getAttribute('data-category');
+                        if (category === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // FAQ accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // Toggle active class
+                this.classList.toggle('active');
+                
+                // Close other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== this) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-input');
+        const searchBtn = document.querySelector('.search-btn');
+
+        searchBtn.addEventListener('click', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            guideCards.forEach(card => {
+                const title = card.querySelector('.guide-title').textContent.toLowerCase();
+                const description = card.querySelector('.guide-description').textContent.toLowerCase();
+                const category = card.querySelector('.guide-category').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm) || category.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Reset all filter buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+        });
+
+        // Allow search on Enter key
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchBtn.click();
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
