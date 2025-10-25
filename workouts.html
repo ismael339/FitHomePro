@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free home workout routines for all fitness levels. HIIT workouts, strength training, cardio exercises, yoga flows, and full-body programs. No gym equipment required!">
+    <meta name="keywords" content="home workouts, workout routines, HIIT exercises, strength training, bodyweight workouts, cardio at home, fitness programs, exercise videos">
+    <meta name="author" content="FitHome Pro">
+    <meta property="og:title" content="Home Workout Routines - HIIT, Strength & Cardio Programs | FitHome Pro">
+    <meta property="og:description" content="Discover effective home workouts for every fitness level. Free workout programs, exercise tutorials, and training plans. Get fit at home!">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Home Workout Routines - HIIT, Strength & Cardio Training 2025 | FitHome Pro</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FF6B35;
+            --secondary: #004E89;
+            --dark: #1A1A2E;
+            --light: #F7F7F7;
+            --accent: #00D9FF;
+            --blue: #3498DB;
+            --red: #E74C3C;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(52,152,219,0.95), rgba(231,76,60,0.95)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%233498DB" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .workout-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .category-count {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        .workouts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .workout-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .workout-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .workout-image {
+            width: 100%;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            background: linear-gradient(135deg, var(--blue), var(--red));
+            position: relative;
+        }
+
+        .workout-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .workout-content {
+            padding: 2rem;
+        }
+
+        .workout-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .workout-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .workout-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .workout-stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #888;
+        }
+
+        .workout-button {
+            display: block;
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .workout-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,107,53,0.4);
+        }
+
+        .featured-workout {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .featured-image {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10rem;
+            min-height: 500px;
+        }
+
+        .featured-content {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .promo-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 25px;
+            padding: 4rem 3rem;
+            margin: 5rem 0;
+            color: white;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(102,126,234,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .promo-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .promo-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .promo-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .promo-description {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+            line-height: 1.7;
+        }
+
+        .promo-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .promo-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .promo-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 1.2rem 3rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 3rem 1.5rem;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            .workouts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-workout {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-image {
+                min-height: 300px;
+            }
+
+            .featured-content {
+                padding: 2rem;
+            }
+
+            .promo-section {
+                padding: 3rem 2rem;
+            }
+
+            .promo-title {
+                font-size: 2rem;
+            }
+
+            .promo-features {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Home Workout Routines",
+        "description": "Free home workout programs for all fitness levels including HIIT, strength training, cardio, and yoga",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FitHome Pro"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">💪 FitHome Pro</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html" class="active">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Workouts</span>
+    </div>
+
+    <section class="hero">
+        <h1>🔥 Home Workout Programs</h1>
+        <p>Effective workout routines for all fitness levels. HIIT, strength training, cardio, yoga, and more. No gym membership required - transform your body at home!</p>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Browse by Workout Type</h2>
+        <p class="section-subtitle">Choose your preferred training style and start working out today</p>
+
+        <section class="workout-categories">
+            <a href="#hiit" class="category-card">
+                <div class="category-icon">🔥</div>
+                <h3 class="category-title">HIIT Workouts</h3>
+                <p class="category-count">45+ workouts</p>
+            </a>
+            <a href="#strength" class="category-card">
+                <div class="category-icon">💪</div>
+                <h3 class="category-title">Strength Training</h3>
+                <p class="category-count">60+ workouts</p>
+            </a>
+            <a href="#cardio" class="category-card">
+                <div class="category-icon">🏃</div>
+                <h3 class="category-title">Cardio</h3>
+                <p class="category-count">38+ workouts</p>
+            </a>
+            <a href="#yoga" class="category-card">
+                <div class="category-icon">🧘</div>
+                <h3 class="category-title">Yoga & Flexibility</h3>
+                <p class="category-count">52+ workouts</p>
+            </a>
+            <a href="#core" class="category-card">
+                <div class="category-icon">🎯</div>
+                <h3 class="category-title">Core & Abs</h3>
+                <p class="category-count">35+ workouts</p>
+            </a>
+            <a href="#fullbody" class="category-card">
+                <div class="category-icon">⚡</div>
+                <h3 class="category-title">Full Body</h3>
+                <p class="category-count">50+ workouts</p>
+            </a>
+        </section>
+
+        <article class="featured-workout">
+            <div class="featured-image">🏋️</div>
+            <div class="featured-content">
+                <span class="workout-tag">⭐ MOST POPULAR</span>
+                <h2 class="workout-title" style="font-size: 2.5rem;">30-Minute Full Body HIIT Workout</h2>
+                <p class="workout-description" style="font-size: 1.2rem; margin-bottom: 2rem;">The ultimate fat-burning workout combining high-intensity intervals with strength exercises. Burn up to 400 calories in just 30 minutes. Perfect for busy schedules and maximum results.</p>
+                <div class="workout-stats" style="margin-bottom: 2rem;">
+                    <div class="stat-item">⏱️ <strong>30 minutes</strong></div>
+                    <div class="stat-item">🔥 <strong>400 calories</strong></div>
+                    <div class="stat-item">📊 <strong>Intermediate</strong></div>
+                </div>
+                <a href="#" class="workout-button" style="display: inline-block; width: auto;">Start Workout Now →</a>
+            </div>
+        </article>
+
+        <section class="promo-section">
+            <span class="promo-badge">✨ RECOMMENDED TOOL</span>
+            <h2 class="promo-title">🎬 Find Your Perfect Anime to Watch</h2>
+            <p class="promo-description">Need entertainment during rest days? Discover your ideal anime with our AI-powered recommendation engine!</p>
+            <p class="promo-description" style="font-size: 1.15rem; margin-bottom: 2rem;">Intelligent search across 40,000+ anime titles with personalized suggestions based on your preferences, mood, and viewing history.</p>
+            
+            <div class="promo-features">
+                <div class="promo-feature">✅ 40,000+ Anime Database</div>
+                <div class="promo-feature">🤖 AI-Powered Recommendations</div>
+                <div class="promo-feature">⚡ Instant Results</div>
+                <div class="promo-feature">🎯 100% Free</div>
+            </div>
+            
+            <a href="https://animeai-psi.vercel.app/imagenai.html" target="_blank" rel="noopener noreferrer" class="promo-button">
+                🔍 Discover Your Next Anime →
+            </a>
+            
+            <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.8;">Perfect for fitness enthusiasts who love anime! Watch while meal prepping or during recovery days.</p>
+        </section>
+
+        <h2 class="section-title" id="hiit">Featured HIIT Workouts</h2>
+        <p class="section-subtitle">High-intensity interval training for maximum fat burn and cardiovascular fitness</p>
+
+        <div class="workouts-grid">
+            <article class="workout-card">
+                <div class="workout-image">
+                    <span class="workout-badge">TRENDING</span>
+                    🔥
+                </div>
+                <div class="workout-content">
+                    <span class="workout-tag">HIIT</span>
+                    <h3 class="workout-title">20-Minute Tabata Burner</h3>
+                    <p class="workout-description">Intense Tabata intervals to torch calories and boost metabolism. 8 exercises, 20 seconds work, 10 seconds rest. No equipment needed.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 20 min</div>
+                        <div class="stat-item">🔥 300 cal</div>
+                        <div class="stat-item">📊 Advanced</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">
+                    🏃
+                </div>
+                <div class="workout-content">
+                    <span class="workout-tag">CARDIO HIIT</span>
+                    <h3 class="workout-title">Beginner HIIT Circuit</h3>
+                    <p class="workout-description">Perfect introduction to high-intensity training. Low-impact modifications available. Build endurance and burn fat safely.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 15 min</div>
+                        <div class="stat-item">🔥 180 cal</div>
+                        <div class="stat-item">📊 Beginner</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">
+                    <span class="workout-badge">NEW</span>
+                    ⚡
+                </div>
+                <div class="workout-content">
+                    <span class="workout-tag">EXPLOSIVE</span>
+                    <h3 class="workout-title">Plyometric Power HIIT</h3>
+                    <p class="workout-description">Build explosive strength and power with jump-based exercises. Increases athletic performance and burns maximum calories.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 25 min</div>
+                        <div class="stat-item">🔥 350 cal</div>
+                        <div class="stat-item">📊 Advanced</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title" id="strength">Strength Training Programs</h2>
+        <p class="section-subtitle">Build muscle, increase strength, and tone your body with progressive resistance training</p>
+
+        <div class="workouts-grid">
+            <article class="workout-card">
+                <div class="workout-image">💪</div>
+                <div class="workout-content">
+                    <span class="workout-tag">UPPER BODY</span>
+                    <h3 class="workout-title">Push-Up Progression Challenge</h3>
+                    <p class="workout-description">Master the perfect push-up with our progressive training program. Build chest, shoulders, and triceps strength with bodyweight only.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 30 min</div>
+                        <div class="stat-item">💪 Upper Body</div>
+                        <div class="stat-item">📊 All Levels</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">
+                    <span class="workout-badge">POPULAR</span>
+                    🦵
+                </div>
+                <div class="workout-content">
+                    <span class="workout-tag">LOWER BODY</span>
+                    <h3 class="workout-title">Leg Day Intensity Workout</h3>
+                    <p class="workout-description">Sculpt strong, defined legs with squats, lunges, and plyometric exercises. Build functional lower body strength at home.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 35 min</div>
+                        <div class="stat-item">🦵 Lower Body</div>
+                        <div class="stat-item">📊 Intermediate</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">🎯</div>
+                <div class="workout-content">
+                    <span class="workout-tag">CORE</span>
+                    <h3 class="workout-title">6-Pack Abs Sculptor</h3>
+                    <p class="workout-description">Target every ab muscle with this comprehensive core routine. Includes planks, crunches, and dynamic movements for defined abs.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 20 min</div>
+                        <div class="stat-item">🎯 Core</div>
+                        <div class="stat-item">📊 All Levels</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title" id="yoga">Yoga & Flexibility</h2>
+        <p class="section-subtitle">Improve flexibility, reduce stress, and enhance mind-body connection</p>
+
+        <div class="workouts-grid">
+            <article class="workout-card">
+                <div class="workout-image">🧘</div>
+                <div class="workout-content">
+                    <span class="workout-tag">MORNING YOGA</span>
+                    <h3 class="workout-title">Energizing Morning Flow</h3>
+                    <p class="workout-description">Start your day right with this gentle yet invigorating yoga sequence. Improve flexibility and mental clarity in just 15 minutes.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 15 min</div>
+                        <div class="stat-item">🧘 Flexibility</div>
+                        <div class="stat-item">📊 Beginner</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">🌙</div>
+                <div class="workout-content">
+                    <span class="workout-tag">EVENING YOGA</span>
+                    <h3 class="workout-title">Relaxing Bedtime Stretch</h3>
+                    <p class="workout-description">Wind down with calming poses that release tension and prepare your body for restful sleep. Perfect evening routine.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 20 min</div>
+                        <div class="stat-item">😌 Relaxation</div>
+                        <div class="stat-item">📊 All Levels</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">
+                    <span class="workout-badge">INTENSE</span>
+                    🔥
+                </div>
+                <div class="workout-content">
+                    <span class="workout-tag">POWER YOGA</span>
+                    <h3 class="workout-title">Power Yoga Strength Builder</h3>
+                    <p class="workout-description">Dynamic yoga sequences that build strength while improving flexibility. Combines traditional poses with athletic movements.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 40 min</div>
+                        <div class="stat-item">💪 Strength + Flex</div>
+                        <div class="stat-item">📊 Intermediate</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title" id="fullbody">Full Body Workouts</h2>
+        <p class="section-subtitle">Complete training sessions targeting all major muscle groups in one workout</p>
+
+        <div class="workouts-grid">
+            <article class="workout-card">
+                <div class="workout-image">
+                    <span class="workout-badge">BEST SELLER</span>
+                    ⚡
+                </div>
+                <div class="workout-content">
+                    <span class="workout-tag">FULL BODY</span>
+                    <h3 class="workout-title">Total Body Transformation</h3>
+                    <p class="workout-description">The ultimate full-body routine combining strength, cardio, and core work. Efficient workout that delivers maximum results in minimum time.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 45 min</div>
+                        <div class="stat-item">🔥 450 cal</div>
+                        <div class="stat-item">📊 Intermediate</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">🏃</div>
+                <div class="workout-content">
+                    <span class="workout-tag">QUICK FIT</span>
+                    <h3 class="workout-title">15-Minute Express Workout</h3>
+                    <p class="workout-description">Perfect for busy days. Fast-paced full-body routine that fits any schedule. No equipment required, just bring your energy!</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 15 min</div>
+                        <div class="stat-item">🔥 200 cal</div>
+                        <div class="stat-item">📊 All Levels</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+
+            <article class="workout-card">
+                <div class="workout-image">💯</div>
+                <div class="workout-content">
+                    <span class="workout-tag">CHALLENGE</span>
+                    <h3 class="workout-title">100 Rep Challenge Workout</h3>
+                    <p class="workout-description">Push your limits with 10 exercises, 10 reps each, repeated 10 times. Mental and physical toughness builder for serious athletes.</p>
+                    <div class="workout-stats">
+                        <div class="stat-item">⏱️ 50 min</div>
+                        <div class="stat-item">🔥 500 cal</div>
+                        <div class="stat-item">📊 Advanced</div>
+                    </div>
+                    <a href="#" class="workout-button">Start Workout</a>
+                </div>
+            </article>
+        </div>
+
+        <section class="cta-section">
+            <h2>Ready to Transform Your Body?</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 1rem;">Join thousands achieving their fitness goals from home</p>
+            <a href="#" class="cta-button">Get Your Free Workout Plan</a>
+        </section>
+
+        <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 4px 25px rgba(0,0,0,0.08);">
+            <h2 class="section-title">Workout Tips for Success</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">⏰ Consistency is Key</h3>
+                    <p style="color: #666; line-height: 1.8;">Work out at the same time each day to build a sustainable routine. Even 15 minutes daily beats sporadic long sessions.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">🎯 Progressive Overload</h3>
+                    <p style="color: #666; line-height: 1.8;">Gradually increase intensity, reps, or duration each week. This is the key to continuous improvement and results.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">💧 Stay Hydrated</h3>
+                    <p style="color: #666; line-height: 1.8;">Drink water before, during, and after workouts. Proper hydration improves performance and recovery significantly.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">😴 Rest & Recovery</h3>
+                    <p style="color: #666; line-height: 1.8;">Muscles grow during rest, not during workouts. Take 1-2 rest days per week and prioritize 7-9 hours of sleep.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">🥗 Fuel Properly</h3>
+                    <p style="color: #666; line-height: 1.8;">Nutrition supports your workouts. Eat protein for muscle recovery and carbs for energy. Check our nutrition guides!</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">📊 Track Progress</h3>
+                    <p style="color: #666; line-height: 1.8;">Take photos, measurements, and note performance improvements. Seeing progress keeps you motivated long-term.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="sitemap.html">Sitemap</a>
+        </div>
+        <p>&copy; 2025 FitHome Pro. All rights reserved. Your journey to better health starts here.</p>
+    </footer>
+
+    <script>
+        // Menu toggle for mobile
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '60px';
+                navLinks.style.right = '20px';
+                navLinks.style.background = 'var(--secondary)';
+                navLinks.style.padding = '1rem';
+                navLinks.style.borderRadius = '10px';
+                navLinks.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add animation to category cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        entry.target.style.transition = 'opacity 0.5s, transform 0.5s';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.workout-card, .category-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Promo section entrance animation
+        const promoSection = document.querySelector('.promo-section');
+        const promoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, { threshold: 0.2 });
+
+        if (promoSection) {
+            promoObserver.observe(promoSection);
+        }
+    </script>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</body>
+</html>
